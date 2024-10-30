@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TailwindPortofolio</title>
+</head>
+<body class="font-rubik">
+    <!-- into section -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-blue-500 relative">
+        <!-- nav bar -->
+         <nav class=" w-full fixed top-0 bg-blue-300 z-10 shadow-lg">
+            <div class="container mx-auto py-5 flex justify-between">
+                <span class="text-2xl font-bold text-white">
+                    My Portofolio</span>
+                <ul class="hidden md:flex space-x-10 text-white">
+                    <li class="hover:text-gray-200"><a href="#home">Homepage</a></li>
+                
+                    <li class="hover:text-gray-200"><a href="#about">About Me</a></li>
+               
+                    <li class="hover:text-gray-200"><a href="#skills">Skills</a></li>
+                
+                    <li class="hover:text-gray-200"><a href="#projects">Projects</a></li>
+                </ul>
+                <div id="burger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="h-0.5 w-6 bg-white"></div>
+                    <div class="h-0.5 w-6 bg-white"></div>
+                    <div class="h-0.5 w-6 bg-white"></div>
+            </div>
+            <!-- mobile -->
+            <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center bg-blue-300">
+                <li class="left-0 top-0 text-white text-left font-bold">My Portofolio</li>
+                    <li id="hlink" class="hover:text-gray-200"><a href="#home">Homepage</a></li>
+                
+                    <li id="hlink" class="hover:text-gray-200"><a href="#about">About Me</a></li>
+               
+                    <li id="hlink" class="hover:text-gray-200"><a href="#skills">Skills</a></li>
+                
+                    <li id="hlink" class="hover:text-gray-200"><a href="#projects">Projects</a></li>
+                </ul>
+                </div>
+
+         </nav>
+         <!-- intro -->
+          <!-- image -->
+           <img class="absolute bottom-0 right-0 h-5/6 lg:left-0 mx-auto object-cover" src="./img/pfp2.png" alt="./img/">
+           <!-- circle -->
+            <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-blue-300 rounded-full -z-10"></div>
+           <!-- animated text -->
+            <div class="absolute top-1/3 text-3xl sm:left-10 sm:text-4xl md:text-6xl"> 
+                <span class="text-gray-600 font-bold">Looking for a</span>
+                <p id="textAnim" class="text-blue-900">
+                
+                </p>
+            </div>
+           
+
+    </div>
+        </div>
+    </div>
+    <!-- about me page -->
+    <div>
+        <!-- <div class="container mx-auto"> 
+             left 
+            <div class="relative">
+            <img class=" h-1/4 absolute top-0 left-0 bg-black" src="./img/dots.png" alt="">    
+            </div>
+            <div class="h-full rounded-full overflow-hidden">
+                <img src="./img/pfp2.png" alt="">
+            </div> insert later if you have another picture-->
+            <!-- right -->
+             <div id="about" class="container mx-auto py-40 flex my-auto flex-col gap-4">
+                <h1 class="text-blue-600 text-4xl font-bold">About Me</h1>
+                
+                <div class="gap-2">
+                <h1 class="text-2xl font-bold text-indigo-500">Hi, I'm Raymond</h1>
+                <p class="text-gray-800">
+                    Currently an Undergraduate at Bina Nusantara University, i am 
+                    trained in several programming languages with an in-depth Understanding of Design Principles.
+                     Looking forward to working with you all.</p>
+                    </div>
+<!-- Container -->
+<div class="-my-6">
+
+    <!-- Timeline Item -->
+    <div class="relative pl-8 sm:pl-32 py-6 group">
+        <!-- Purple label -->
+        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">High School</div>
+        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+        <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+            <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
+                2019-2021
+            </time>
+
+            <div class="text-xl font-bold text-slate-900 uppercase">SMA Karangturi</div>
+
+        </div>
+        <!-- Content -->
+        <div class="text-slate-500"> Member of the KARANGTURI Game Development Club before it was suspended during COVID. </div>
+        
+    </div>
+    <!-- Item 2 -->
+    <div class="relative pl-8 sm:pl-32 py-6 group">
+        <!-- Purple label -->
+        <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">College</div>
+        <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+        <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+            <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">
+                2021-2024
+            </time>
+
+            <div class="text-xl font-bold text-slate-900 uppercase">Bina Nusantara University</div>
+
+        </div>
+        <!-- Content -->
+        <div class="text-slate-500">Active member of the Bina Nusantara Game Development Club and volunteered in various Offline and Online events.</div>
+        
+    </div>
+</div>
+             </div>
+        </div>
+    </div>
+
+    <!-- skills -->
+     <div>
+        <div id="skills" class="container mx-auto py-40 flex my-auto flex-col gap-4">
+            <!-- top -->
+             <h1 class="text-blue-600 text-4xl font-bold">SKILLS</h1>
+             <h1 class="text-2xl font-bold text-indigo-500">What are my skillset?</h1>
+        <!-- bottom -->
+         <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/CIcon.png" height="100" width="100" alt="">
+                <h1 class="font-medium">C Programming</h1>
+                <p class="text-slate-500">Experience with using Dev C++ to code using C</p>
+            </div>
+                        <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/JavaIcon.png" height="100" width="100" alt="">
+                <h1 class="font-medium">Java Programming</h1>
+                <p class="text-slate-500">Experience with using Eclipse IDE to code using Java</p>
+            </div>
+                        <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/android-studio-icon.png" height="100" width="100" alt="">
+                <h1 class="font-medium">Mobile Programming</h1>
+                <p class="text-slate-500">Experience with using Android Studio to create applications for Mobile Devices</p>
+            </div>
+                        <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/SQLiteIcon.png" height="100" width="100" alt="">
+                <h1 class="font-medium">SQLite Database Management</h1>
+                <p class="text-slate-500">Experience with using SQLite to manipulate data in Database</p>
+            </div>
+                        <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/CiscoIcon.png" height="100" width="100" alt="">
+                <h1 class="font-medium">Network Configuration Experience</h1>
+                <p class="text-slate-500">Experience with using Cisco Packet Tracer to build efficient Network Environments</p>
+            </div>
+                        <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/UnityLogo.png" height="100" width="100" alt="">
+                <h1 class="font-medium">Unity Programming</h1>
+                <p class="text-slate-500">Experience with using Unity to create 2D and 3D Games</p>
+
+            </div>
+                        <!-- end of card -->
+             <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/PythonLogo.png" height="100" width="100" alt="">
+                <h1 class="font-medium">Python Programming</h1>
+                <p class="text-slate-500">Experience with using Visual Studio Code to visualize DNA and RNA and build Electrical Ciruits using Python</p>
+                            
+            </div>      
+                        <!-- end of card -->       
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/HTMLLogo.png" height="100" width="100" alt="">
+                <h1 class="font-medium">HTML Programming</h1>
+                <p class="text-slate-500">Experience with using Visual Studio Code and Visual Studio to create Websites.</p>
+                            
+            </div>   
+                        <!-- end of card -->          
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/TailwindIcon.png" height="100" width="100" alt="">
+                <h1 class="font-medium">Tailwind Usage</h1>
+                <p class="text-slate-500">Experience with using Visual Studio Code to create Websites using Tailwind</p>
+                            
+            </div>
+                        <!-- end of card -->
+         </div>
+        </div>
+    </div>
+
+    <!-- Portofolio -->
+    <div>
+        <div id="projects" class="container mx-auto py-40 flex my-auto flex-col gap-4">
+            <!-- top -->
+             <h1 class="text-blue-600 text-4xl font-bold">WORKS AND PROJECTS</h1>
+             <h1 class="text-2xl font-bold text-indigo-500">What have I worked on?</h1>
+        <!-- bottom -->
+         <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/SeaYLImage.png" height="300" width="400" alt="">
+                <h1 class="font-medium">Sea You Later</h1>
+                <p class="text-slate-500">Results from BGDC's Talent Group Batch-Designer</p>
+            </div>
+            <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/ICCAimg.webp" height="300" width="400" alt="">
+                <h1 class="font-medium">ICCA 2024</h1>
+                <p class="text-slate-500">Participant of the International Conference on Computer & Applications</p>
+            </div>
+            <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/portowebimg.png" height="300" width="400" alt="">
+                <h1 class="font-medium">This Website!</h1>
+                <p class="text-slate-500">Made using Visual Studio Code using HTML with the help of Tailwind CSS</p>
+            </div>
+            <!-- end of card -->
+            <!-- card -->
+            <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3 ">
+                <img src="./img/comingsoon.png" height="300" width="400" alt="">
+                <h1 class="font-medium">More to come!</h1>
+                <p class="text-slate-500">"One day we will look back and see how far we've come"</p>
+            </div>
+            <!-- end of card -->
+         </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class=" w-full top-0 bg-gray-800 shadow-lg">
+        <div class="container mx-auto py-5 flex justify-between">
+            <span></span>
+            <div class="flex gap-5">
+                <img class="w-4 cursor-pointer" src="img/instagram.png" alt="">
+                <img class="w-4 cursor-pointer" src="img/linkedin.png" alt="">
+            </div>
+            </div>
+
+    </div>
+    <script src="./jscript/app.js"></script>
+    <script src="./jscript/autotyping.js"></script>
+</body>
+</html>
